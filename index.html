@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bama Businesses – Alabama Business Directory</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ====== HEADER ====== -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="/" class="logo">
+          <span class="logo-bama">Bama</span><span class="logo-biz">Businesses</span>
+        </a>
+        <p class="tagline">Your guide to local businesses across Alabama</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- ====== HERO ====== -->
+  <section class="hero">
+    <div class="container">
+      <h1>Find Local Businesses in Alabama</h1>
+      <p>Browse <strong>10 categories</strong> across <strong>8 cities</strong> to discover what Alabama has to offer.</p>
+      <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search businesses, categories, or cities&hellip;" autocomplete="off">
+        <button id="search-btn" aria-label="Search">Search</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FILTERS ====== -->
+  <section class="filters">
+    <div class="container">
+      <div class="filter-group">
+        <label for="filter-city">City</label>
+        <select id="filter-city">
+          <option value="all">All Cities</option>
+          <option value="huntsville">Huntsville</option>
+          <option value="mobile">Mobile</option>
+          <option value="birmingham">Birmingham</option>
+          <option value="montgomery">Montgomery</option>
+          <option value="tuscaloosa">Tuscaloosa</option>
+          <option value="hoover">Hoover</option>
+          <option value="auburn">Auburn</option>
+          <option value="dothan">Dothan</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="filter-category">Category</label>
+        <select id="filter-category">
+          <option value="all">All Categories</option>
+          <option value="food-and-beverage">Food and Beverage</option>
+          <option value="retail-trade">Retail Trade</option>
+          <option value="professional-and-technical-services">Professional and Technical Services</option>
+          <option value="healthcare-and-wellness">Healthcare and Wellness</option>
+          <option value="personal-services">Personal Services</option>
+          <option value="real-estate-and-property-management">Real Estate and Property Management</option>
+          <option value="education-and-enrichment">Education and Enrichment</option>
+          <option value="construction-and-trades">Construction and Trades</option>
+          <option value="leisure-arts-and-entertainment">Leisure, Arts, and Entertainment</option>
+          <option value="financial-services">Financial Services</option>
+        </select>
+      </div>
+      <button id="clear-filters" class="btn-outline">Clear Filters</button>
+    </div>
+  </section>
+
+  <!-- ====== RESULTS COUNTER ====== -->
+  <section class="results-info">
+    <div class="container">
+      <p id="results-count">Showing all 80 businesses</p>
+    </div>
+  </section>
+
+  <!-- ====== CATEGORY SECTIONS ====== -->
+  <main class="directory">
+    <div class="container">
+
+      <!-- ======================= FOOD AND BEVERAGE ======================= -->
+      <section class="category-section" data-category="food-and-beverage">
+        <h2 class="category-title"><span class="cat-icon">&#127860;</span> Food and Beverage</h2>
+        <div class="business-grid">
+
+          <div class="business-card" data-city="huntsville" data-category="food-and-beverage">
+            <span class="city-badge">Huntsville</span>
+            <h3>Rocket City Bistro</h3>
+            <p class="biz-address">123 Main St, Huntsville, AL 35801</p>
+            <p class="biz-phone">(256) 555-0101</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="mobile" data-category="food-and-beverage">
+            <span class="city-badge">Mobile</span>
+            <h3>Gulf Coast Grill</h3>
+            <p class="biz-address">456 Azalea Rd, Mobile, AL 36602</p>
+            <p class="biz-phone">(251) 555-0102</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="birmingham" data-category="food-and-beverage">
+            <span class="city-badge">Birmingham</span>
+            <h3>Iron City Eats</h3>
+            <p class="biz-address">789 1st Ave N, Birmingham, AL 35203</p>
+            <p class="biz-phone">(205) 555-0103</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="montgomery" data-category="food-and-beverage">
+            <span class="city-badge">Montgomery</span>
+            <h3>Capitol Kitchen</h3>
+            <p class="biz-address">101 Dexter Ave, Montgomery, AL 36104</p>
+            <p class="biz-phone">(334) 555-0104</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="tuscaloosa" data-category="food-and-beverage">
+            <span class="city-badge">Tuscaloosa</span>
+            <h3>Crimson Cafe</h3>
+            <p class="biz-address">202 University Blvd, Tuscaloosa, AL 35401</p>
+            <p class="biz-phone">(205) 555-0105</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="hoover" data-category="food-and-beverage">
+            <span class="city-badge">Hoover</span>
+            <h3>Hoover Harvest Table</h3>
+            <p class="biz-address">303 Galleria Blvd, Hoover, AL 35244</p>
+            <p class="biz-phone">(205) 555-0106</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="auburn" data-category="food-and-beverage">
+            <span class="city-badge">Auburn</span>
+            <h3>Tiger Town Diner</h3>
+            <p class="biz-address">404 College St, Auburn, AL 36830</p>
+            <p class="biz-phone">(334) 555-0107</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="dothan" data-category="food-and-beverage">
+            <span class="city-badge">Dothan</span>
+            <h3>Peanut Capital Grill</h3>
+            <p class="biz-address">505 Ross Clark Cir, Dothan, AL 36301</p>
+            <p class="biz-phone">(334) 555-0108</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ======================= RETAIL TRADE ======================= -->
+      <section class="category-section" data-category="retail-trade">
+        <h2 class="category-title"><span class="cat-icon">&#128722;</span> Retail Trade</h2>
+        <div class="business-grid">
+
+          <div class="business-card" data-city="huntsville" data-category="retail-trade">
+            <span class="city-badge">Huntsville</span>
+            <h3>Rocket City Outfitters</h3>
+            <p class="biz-address">110 Jefferson St, Huntsville, AL 35801</p>
+            <p class="biz-phone">(256) 555-0201</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="mobile" data-category="retail-trade">
+            <span class="city-badge">Mobile</span>
+            <h3>Bayfront Boutique</h3>
+            <p class="biz-address">220 Dauphin St, Mobile, AL 36602</p>
+            <p class="biz-phone">(251) 555-0202</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="birmingham" data-category="retail-trade">
+            <span class="city-badge">Birmingham</span>
+            <h3>Magic City Market</h3>
+            <p class="biz-address">330 20th St S, Birmingham, AL 35233</p>
+            <p class="biz-phone">(205) 555-0203</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="montgomery" data-category="retail-trade">
+            <span class="city-badge">Montgomery</span>
+            <h3>River Region Retail</h3>
+            <p class="biz-address">440 Eastern Blvd, Montgomery, AL 36117</p>
+            <p class="biz-phone">(334) 555-0204</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="tuscaloosa" data-category="retail-trade">
+            <span class="city-badge">Tuscaloosa</span>
+            <h3>Druid City Goods</h3>
+            <p class="biz-address">550 15th St E, Tuscaloosa, AL 35401</p>
+            <p class="biz-phone">(205) 555-0205</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="hoover" data-category="retail-trade">
+            <span class="city-badge">Hoover</span>
+            <h3>Galleria General Store</h3>
+            <p class="biz-address">660 Riverchase Pkwy, Hoover, AL 35244</p>
+            <p class="biz-phone">(205) 555-0206</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="auburn" data-category="retail-trade">
+            <span class="city-badge">Auburn</span>
+            <h3>Plains Supply Co</h3>
+            <p class="biz-address">770 Opelika Rd, Auburn, AL 36830</p>
+            <p class="biz-phone">(334) 555-0207</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="dothan" data-category="retail-trade">
+            <span class="city-badge">Dothan</span>
+            <h3>Wiregrass Wares</h3>
+            <p class="biz-address">880 Montgomery Hwy, Dothan, AL 36303</p>
+            <p class="biz-phone">(334) 555-0208</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ======================= PROFESSIONAL AND TECHNICAL SERVICES ======================= -->
+      <section class="category-section" data-category="professional-and-technical-services">
+        <h2 class="category-title"><span class="cat-icon">&#128188;</span> Professional and Technical Services</h2>
+        <div class="business-grid">
+
+          <div class="business-card" data-city="huntsville" data-category="professional-and-technical-services">
+            <span class="city-badge">Huntsville</span>
+            <h3>Rocket Science Consulting</h3>
+            <p class="biz-address">111 Research Park Blvd, Huntsville, AL 35806</p>
+            <p class="biz-phone">(256) 555-0301</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="mobile" data-category="professional-and-technical-services">
+            <span class="city-badge">Mobile</span>
+            <h3>Port City Professional Group</h3>
+            <p class="biz-address">222 St. Louis St, Mobile, AL 36602</p>
+            <p class="biz-phone">(251) 555-0302</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="birmingham" data-category="professional-and-technical-services">
+            <span class="city-badge">Birmingham</span>
+            <h3>Steel City Solutions</h3>
+            <p class="biz-address">333 Richard Arrington Blvd, Birmingham, AL 35203</p>
+            <p class="biz-phone">(205) 555-0303</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="montgomery" data-category="professional-and-technical-services">
+            <span class="city-badge">Montgomery</span>
+            <h3>Capitol Consulting Partners</h3>
+            <p class="biz-address">444 Commerce St, Montgomery, AL 36104</p>
+            <p class="biz-phone">(334) 555-0304</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="tuscaloosa" data-category="professional-and-technical-services">
+            <span class="city-badge">Tuscaloosa</span>
+            <h3>Black Warrior Tech Advisors</h3>
+            <p class="biz-address">555 Greensboro Ave, Tuscaloosa, AL 35401</p>
+            <p class="biz-phone">(205) 555-0305</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="hoover" data-category="professional-and-technical-services">
+            <span class="city-badge">Hoover</span>
+            <h3>Hoover Professional Services</h3>
+            <p class="biz-address">666 John Hawkins Pkwy, Hoover, AL 35244</p>
+            <p class="biz-phone">(205) 555-0306</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="auburn" data-category="professional-and-technical-services">
+            <span class="city-badge">Auburn</span>
+            <h3>Tiger Consulting Group</h3>
+            <p class="biz-address">777 S College St, Auburn, AL 36832</p>
+            <p class="biz-phone">(334) 555-0307</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="dothan" data-category="professional-and-technical-services">
+            <span class="city-badge">Dothan</span>
+            <h3>Circle City Advisors</h3>
+            <p class="biz-address">888 W Main St, Dothan, AL 36301</p>
+            <p class="biz-phone">(334) 555-0308</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ======================= HEALTHCARE AND WELLNESS ======================= -->
+      <section class="category-section" data-category="healthcare-and-wellness">
+        <h2 class="category-title"><span class="cat-icon">&#9877;</span> Healthcare and Wellness</h2>
+        <div class="business-grid">
+
+          <div class="business-card" data-city="huntsville" data-category="healthcare-and-wellness">
+            <span class="city-badge">Huntsville</span>
+            <h3>Rocket City Wellness Center</h3>
+            <p class="biz-address">112 Bob Wallace Ave, Huntsville, AL 35801</p>
+            <p class="biz-phone">(256) 555-0401</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="mobile" data-category="healthcare-and-wellness">
+            <span class="city-badge">Mobile</span>
+            <h3>Azalea Health Clinic</h3>
+            <p class="biz-address">223 Spring Hill Ave, Mobile, AL 36608</p>
+            <p class="biz-phone">(251) 555-0402</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="birmingham" data-category="healthcare-and-wellness">
+            <span class="city-badge">Birmingham</span>
+            <h3>Vulcan Health Partners</h3>
+            <p class="biz-address">334 Southside Blvd, Birmingham, AL 35205</p>
+            <p class="biz-phone">(205) 555-0403</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="montgomery" data-category="healthcare-and-wellness">
+            <span class="city-badge">Montgomery</span>
+            <h3>River Region Family Health</h3>
+            <p class="biz-address">445 Federal Dr, Montgomery, AL 36107</p>
+            <p class="biz-phone">(334) 555-0404</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="tuscaloosa" data-category="healthcare-and-wellness">
+            <span class="city-badge">Tuscaloosa</span>
+            <h3>Tuscaloosa Therapy &amp; Wellness</h3>
+            <p class="biz-address">556 McFarland Blvd, Tuscaloosa, AL 35406</p>
+            <p class="biz-phone">(205) 555-0405</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="hoover" data-category="healthcare-and-wellness">
+            <span class="city-badge">Hoover</span>
+            <h3>Hoover Family Chiropractic</h3>
+            <p class="biz-address">667 Lorna Rd, Hoover, AL 35216</p>
+            <p class="biz-phone">(205) 555-0406</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="auburn" data-category="healthcare-and-wellness">
+            <span class="city-badge">Auburn</span>
+            <h3>Auburn Integrative Medicine</h3>
+            <p class="biz-address">778 E Glenn Ave, Auburn, AL 36830</p>
+            <p class="biz-phone">(334) 555-0407</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="dothan" data-category="healthcare-and-wellness">
+            <span class="city-badge">Dothan</span>
+            <h3>Wiregrass Wellness Clinic</h3>
+            <p class="biz-address">889 Hartford Hwy, Dothan, AL 36305</p>
+            <p class="biz-phone">(334) 555-0408</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ======================= PERSONAL SERVICES ======================= -->
+      <section class="category-section" data-category="personal-services">
+        <h2 class="category-title"><span class="cat-icon">&#9986;</span> Personal Services</h2>
+        <div class="business-grid">
+
+          <div class="business-card" data-city="huntsville" data-category="personal-services">
+            <span class="city-badge">Huntsville</span>
+            <h3>Rocket City Salon &amp; Spa</h3>
+            <p class="biz-address">113 Clinton Ave, Huntsville, AL 35801</p>
+            <p class="biz-phone">(256) 555-0501</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="mobile" data-category="personal-services">
+            <span class="city-badge">Mobile</span>
+            <h3>Mobile Bay Barber Shop</h3>
+            <p class="biz-address">224 Government St, Mobile, AL 36602</p>
+            <p class="biz-phone">(251) 555-0502</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="birmingham" data-category="personal-services">
+            <span class="city-badge">Birmingham</span>
+            <h3>Highlands Grooming Lounge</h3>
+            <p class="biz-address">335 Highland Ave, Birmingham, AL 35205</p>
+            <p class="biz-phone">(205) 555-0503</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="montgomery" data-category="personal-services">
+            <span class="city-badge">Montgomery</span>
+            <h3>Capitol City Cleaners</h3>
+            <p class="biz-address">446 Atlanta Hwy, Montgomery, AL 36109</p>
+            <p class="biz-phone">(334) 555-0504</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="tuscaloosa" data-category="personal-services">
+            <span class="city-badge">Tuscaloosa</span>
+            <h3>T-Town Tailoring</h3>
+            <p class="biz-address">557 Hargrove Rd, Tuscaloosa, AL 35401</p>
+            <p class="biz-phone">(205) 555-0505</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="hoover" data-category="personal-services">
+            <span class="city-badge">Hoover</span>
+            <h3>Hoover Nails &amp; Beauty</h3>
+            <p class="biz-address">668 Patton Chapel Rd, Hoover, AL 35226</p>
+            <p class="biz-phone">(205) 555-0506</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="auburn" data-category="personal-services">
+            <span class="city-badge">Auburn</span>
+            <h3>Auburn Pet Grooming</h3>
+            <p class="biz-address">779 N Dean Rd, Auburn, AL 36830</p>
+            <p class="biz-phone">(334) 555-0507</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="dothan" data-category="personal-services">
+            <span class="city-badge">Dothan</span>
+            <h3>Dothan Day Spa</h3>
+            <p class="biz-address">890 S Oates St, Dothan, AL 36301</p>
+            <p class="biz-phone">(334) 555-0508</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ======================= REAL ESTATE AND PROPERTY MANAGEMENT ======================= -->
+      <section class="category-section" data-category="real-estate-and-property-management">
+        <h2 class="category-title"><span class="cat-icon">&#127968;</span> Real Estate and Property Management</h2>
+        <div class="business-grid">
+
+          <div class="business-card" data-city="huntsville" data-category="real-estate-and-property-management">
+            <span class="city-badge">Huntsville</span>
+            <h3>Tennessee Valley Realty</h3>
+            <p class="biz-address">114 Governors Dr, Huntsville, AL 35801</p>
+            <p class="biz-phone">(256) 555-0601</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="mobile" data-category="real-estate-and-property-management">
+            <span class="city-badge">Mobile</span>
+            <h3>Gulf Properties Group</h3>
+            <p class="biz-address">225 Springdale Blvd, Mobile, AL 36606</p>
+            <p class="biz-phone">(251) 555-0602</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="birmingham" data-category="real-estate-and-property-management">
+            <span class="city-badge">Birmingham</span>
+            <h3>Jones Valley Property Management</h3>
+            <p class="biz-address">336 Lakeshore Dr, Birmingham, AL 35209</p>
+            <p class="biz-phone">(205) 555-0603</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="montgomery" data-category="real-estate-and-property-management">
+            <span class="city-badge">Montgomery</span>
+            <h3>Montgomery Metro Realty</h3>
+            <p class="biz-address">447 Bell Rd, Montgomery, AL 36117</p>
+            <p class="biz-phone">(334) 555-0604</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="tuscaloosa" data-category="real-estate-and-property-management">
+            <span class="city-badge">Tuscaloosa</span>
+            <h3>Bama Realty Partners</h3>
+            <p class="biz-address">558 Jack Warner Pkwy, Tuscaloosa, AL 35401</p>
+            <p class="biz-phone">(205) 555-0605</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="hoover" data-category="real-estate-and-property-management">
+            <span class="city-badge">Hoover</span>
+            <h3>Hoover Homes Realty</h3>
+            <p class="biz-address">669 Valleydale Rd, Hoover, AL 35244</p>
+            <p class="biz-phone">(205) 555-0606</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="auburn" data-category="real-estate-and-property-management">
+            <span class="city-badge">Auburn</span>
+            <h3>Lee County Property Group</h3>
+            <p class="biz-address">780 Shug Jordan Pkwy, Auburn, AL 36832</p>
+            <p class="biz-phone">(334) 555-0607</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="dothan" data-category="real-estate-and-property-management">
+            <span class="city-badge">Dothan</span>
+            <h3>Dothan Dream Homes</h3>
+            <p class="biz-address">891 Honeysuckle Rd, Dothan, AL 36305</p>
+            <p class="biz-phone">(334) 555-0608</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ======================= EDUCATION AND ENRICHMENT ======================= -->
+      <section class="category-section" data-category="education-and-enrichment">
+        <h2 class="category-title"><span class="cat-icon">&#127891;</span> Education and Enrichment</h2>
+        <div class="business-grid">
+
+          <div class="business-card" data-city="huntsville" data-category="education-and-enrichment">
+            <span class="city-badge">Huntsville</span>
+            <h3>Space Camp Learning Center</h3>
+            <p class="biz-address">115 Tranquility Base, Huntsville, AL 35805</p>
+            <p class="biz-phone">(256) 555-0701</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="mobile" data-category="education-and-enrichment">
+            <span class="city-badge">Mobile</span>
+            <h3>Gulf Shores Academy</h3>
+            <p class="biz-address">226 Old Shell Rd, Mobile, AL 36604</p>
+            <p class="biz-phone">(251) 555-0702</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="birmingham" data-category="education-and-enrichment">
+            <span class="city-badge">Birmingham</span>
+            <h3>Birmingham Tutoring Collective</h3>
+            <p class="biz-address">337 Cahaba Rd, Birmingham, AL 35223</p>
+            <p class="biz-phone">(205) 555-0703</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="montgomery" data-category="education-and-enrichment">
+            <span class="city-badge">Montgomery</span>
+            <h3>Freedom Riders Learning Hub</h3>
+            <p class="biz-address">448 S Court St, Montgomery, AL 36104</p>
+            <p class="biz-phone">(334) 555-0704</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="tuscaloosa" data-category="education-and-enrichment">
+            <span class="city-badge">Tuscaloosa</span>
+            <h3>Capstone Music Academy</h3>
+            <p class="biz-address">559 Paul Bryant Dr, Tuscaloosa, AL 35401</p>
+            <p class="biz-phone">(205) 555-0705</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="hoover" data-category="education-and-enrichment">
+            <span class="city-badge">Hoover</span>
+            <h3>Hoover Kids Coding Club</h3>
+            <p class="biz-address">670 Stadium Trace Pkwy, Hoover, AL 35244</p>
+            <p class="biz-phone">(205) 555-0706</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="auburn" data-category="education-and-enrichment">
+            <span class="city-badge">Auburn</span>
+            <h3>War Eagle Prep Academy</h3>
+            <p class="biz-address">781 Wire Rd, Auburn, AL 36832</p>
+            <p class="biz-phone">(334) 555-0707</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="dothan" data-category="education-and-enrichment">
+            <span class="city-badge">Dothan</span>
+            <h3>Wiregrass Language School</h3>
+            <p class="biz-address">892 Cherokee Ave, Dothan, AL 36303</p>
+            <p class="biz-phone">(334) 555-0708</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ======================= CONSTRUCTION AND TRADES ======================= -->
+      <section class="category-section" data-category="construction-and-trades">
+        <h2 class="category-title"><span class="cat-icon">&#128296;</span> Construction and Trades</h2>
+        <div class="business-grid">
+
+          <div class="business-card" data-city="huntsville" data-category="construction-and-trades">
+            <span class="city-badge">Huntsville</span>
+            <h3>North Alabama Builders</h3>
+            <p class="biz-address">116 Memorial Pkwy, Huntsville, AL 35801</p>
+            <p class="biz-phone">(256) 555-0801</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="mobile" data-category="construction-and-trades">
+            <span class="city-badge">Mobile</span>
+            <h3>Coastal Construction Co</h3>
+            <p class="biz-address">227 Schillinger Rd, Mobile, AL 36608</p>
+            <p class="biz-phone">(251) 555-0802</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="birmingham" data-category="construction-and-trades">
+            <span class="city-badge">Birmingham</span>
+            <h3>Iron Forge Contracting</h3>
+            <p class="biz-address">338 Oxmoor Rd, Birmingham, AL 35209</p>
+            <p class="biz-phone">(205) 555-0803</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="montgomery" data-category="construction-and-trades">
+            <span class="city-badge">Montgomery</span>
+            <h3>River Region Roofing</h3>
+            <p class="biz-address">449 Troy Hwy, Montgomery, AL 36116</p>
+            <p class="biz-phone">(334) 555-0804</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="tuscaloosa" data-category="construction-and-trades">
+            <span class="city-badge">Tuscaloosa</span>
+            <h3>Tide Plumbing &amp; Electric</h3>
+            <p class="biz-address">560 Skyland Blvd, Tuscaloosa, AL 35405</p>
+            <p class="biz-phone">(205) 555-0805</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="hoover" data-category="construction-and-trades">
+            <span class="city-badge">Hoover</span>
+            <h3>Hoover Handyman Pros</h3>
+            <p class="biz-address">671 Bluff Park Blvd, Hoover, AL 35226</p>
+            <p class="biz-phone">(205) 555-0806</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="auburn" data-category="construction-and-trades">
+            <span class="city-badge">Auburn</span>
+            <h3>Plains Paving &amp; Grading</h3>
+            <p class="biz-address">782 E University Dr, Auburn, AL 36832</p>
+            <p class="biz-phone">(334) 555-0807</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="dothan" data-category="construction-and-trades">
+            <span class="city-badge">Dothan</span>
+            <h3>Southeast Siding Solutions</h3>
+            <p class="biz-address">893 Reeves St, Dothan, AL 36303</p>
+            <p class="biz-phone">(334) 555-0808</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ======================= LEISURE, ARTS, AND ENTERTAINMENT ======================= -->
+      <section class="category-section" data-category="leisure-arts-and-entertainment">
+        <h2 class="category-title"><span class="cat-icon">&#127917;</span> Leisure, Arts, and Entertainment</h2>
+        <div class="business-grid">
+
+          <div class="business-card" data-city="huntsville" data-category="leisure-arts-and-entertainment">
+            <span class="city-badge">Huntsville</span>
+            <h3>Huntsville Arts Collective</h3>
+            <p class="biz-address">117 Monroe St, Huntsville, AL 35801</p>
+            <p class="biz-phone">(256) 555-0901</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="mobile" data-category="leisure-arts-and-entertainment">
+            <span class="city-badge">Mobile</span>
+            <h3>Mardi Gras Entertainment</h3>
+            <p class="biz-address">228 Royal St, Mobile, AL 36602</p>
+            <p class="biz-phone">(251) 555-0902</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="birmingham" data-category="leisure-arts-and-entertainment">
+            <span class="city-badge">Birmingham</span>
+            <h3>Avondale Arts &amp; Music</h3>
+            <p class="biz-address">339 41st St S, Birmingham, AL 35222</p>
+            <p class="biz-phone">(205) 555-0903</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="montgomery" data-category="leisure-arts-and-entertainment">
+            <span class="city-badge">Montgomery</span>
+            <h3>Montgomery Performing Arts</h3>
+            <p class="biz-address">450 S Perry St, Montgomery, AL 36104</p>
+            <p class="biz-phone">(334) 555-0904</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="tuscaloosa" data-category="leisure-arts-and-entertainment">
+            <span class="city-badge">Tuscaloosa</span>
+            <h3>Druid City Escape Rooms</h3>
+            <p class="biz-address">561 Main Ave, Tuscaloosa, AL 35401</p>
+            <p class="biz-phone">(205) 555-0905</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="hoover" data-category="leisure-arts-and-entertainment">
+            <span class="city-badge">Hoover</span>
+            <h3>Hoover Recreation Center</h3>
+            <p class="biz-address">672 Municipal Dr, Hoover, AL 35216</p>
+            <p class="biz-phone">(205) 555-0906</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="auburn" data-category="leisure-arts-and-entertainment">
+            <span class="city-badge">Auburn</span>
+            <h3>Auburn Community Theater</h3>
+            <p class="biz-address">783 Samford Ave, Auburn, AL 36830</p>
+            <p class="biz-phone">(334) 555-0907</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="dothan" data-category="leisure-arts-and-entertainment">
+            <span class="city-badge">Dothan</span>
+            <h3>Peanut Festival Playhouse</h3>
+            <p class="biz-address">894 N Foster St, Dothan, AL 36303</p>
+            <p class="biz-phone">(334) 555-0908</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ======================= FINANCIAL SERVICES ======================= -->
+      <section class="category-section" data-category="financial-services">
+        <h2 class="category-title"><span class="cat-icon">&#128176;</span> Financial Services</h2>
+        <div class="business-grid">
+
+          <div class="business-card" data-city="huntsville" data-category="financial-services">
+            <span class="city-badge">Huntsville</span>
+            <h3>Rocket City Financial</h3>
+            <p class="biz-address">118 Williams Ave, Huntsville, AL 35801</p>
+            <p class="biz-phone">(256) 555-1001</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="mobile" data-category="financial-services">
+            <span class="city-badge">Mobile</span>
+            <h3>Port City Credit Union</h3>
+            <p class="biz-address">229 Airport Blvd, Mobile, AL 36606</p>
+            <p class="biz-phone">(251) 555-1002</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="birmingham" data-category="financial-services">
+            <span class="city-badge">Birmingham</span>
+            <h3>Magic City Wealth Advisors</h3>
+            <p class="biz-address">340 Financial Center Pkwy, Birmingham, AL 35203</p>
+            <p class="biz-phone">(205) 555-1003</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="montgomery" data-category="financial-services">
+            <span class="city-badge">Montgomery</span>
+            <h3>Capitol Financial Group</h3>
+            <p class="biz-address">451 S Union St, Montgomery, AL 36104</p>
+            <p class="biz-phone">(334) 555-1004</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="tuscaloosa" data-category="financial-services">
+            <span class="city-badge">Tuscaloosa</span>
+            <h3>Tuscaloosa Tax &amp; Accounting</h3>
+            <p class="biz-address">562 Lurleen Wallace Blvd, Tuscaloosa, AL 35401</p>
+            <p class="biz-phone">(205) 555-1005</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="hoover" data-category="financial-services">
+            <span class="city-badge">Hoover</span>
+            <h3>Hoover Investment Services</h3>
+            <p class="biz-address">673 Southland Dr, Hoover, AL 35226</p>
+            <p class="biz-phone">(205) 555-1006</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="auburn" data-category="financial-services">
+            <span class="city-badge">Auburn</span>
+            <h3>Auburn Savings &amp; Loan</h3>
+            <p class="biz-address">784 Magnolia Ave, Auburn, AL 36830</p>
+            <p class="biz-phone">(334) 555-1007</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div class="business-card" data-city="dothan" data-category="financial-services">
+            <span class="city-badge">Dothan</span>
+            <h3>Wiregrass Financial Planning</h3>
+            <p class="biz-address">895 Westgate Pkwy, Dothan, AL 36303</p>
+            <p class="biz-phone">(334) 555-1008</p>
+            <p class="biz-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Bama Businesses</h4>
+          <p>Your trusted Alabama business directory. Connecting communities with local services across the state.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="#" data-cat-link="food-and-beverage">Food and Beverage</a></li>
+            <li><a href="#" data-cat-link="retail-trade">Retail Trade</a></li>
+            <li><a href="#" data-cat-link="professional-and-technical-services">Professional &amp; Technical</a></li>
+            <li><a href="#" data-cat-link="healthcare-and-wellness">Healthcare &amp; Wellness</a></li>
+            <li><a href="#" data-cat-link="personal-services">Personal Services</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>More Categories</h4>
+          <ul>
+            <li><a href="#" data-cat-link="real-estate-and-property-management">Real Estate</a></li>
+            <li><a href="#" data-cat-link="education-and-enrichment">Education &amp; Enrichment</a></li>
+            <li><a href="#" data-cat-link="construction-and-trades">Construction &amp; Trades</a></li>
+            <li><a href="#" data-cat-link="leisure-arts-and-entertainment">Leisure &amp; Entertainment</a></li>
+            <li><a href="#" data-cat-link="financial-services">Financial Services</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Cities</h4>
+          <ul>
+            <li>Huntsville</li>
+            <li>Mobile</li>
+            <li>Birmingham</li>
+            <li>Montgomery</li>
+            <li>Tuscaloosa</li>
+            <li>Hoover</li>
+            <li>Auburn</li>
+            <li>Dothan</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Bama Businesses. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
